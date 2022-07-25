@@ -38,7 +38,7 @@
 
     .text {
         font-family: "Open Sans", sans-serif;
-        color: hsl(0, 0, 30%);
+        color: hsl(0, 0%, 30%);
         border-radius: 15px;
         background-color: hsl(218, 67%, 98%);
         box-shadow: 2px 2px 3px $gray;
