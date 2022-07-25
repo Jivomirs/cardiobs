@@ -16,8 +16,8 @@
     <div class="upperHeader">
         <ul>
             <li id="address"><i class="fa fa-map"></i> Бургас, ж.к. Перла, Бл. 1, вх. 1</li>
-            <li id="phone" ><i class="fa fa-phone"></i> {phone}</li>
-            <li id="email" ><i class="fa fa-envelope"></i> cardiocenterbs@gmail.com</li>
+            <li id="phone" ><i class="fa fa-phone"></i> <a class="upperHeaderLinkage" href="tel:0876999539">{phone}</a></li>
+            <li id="email" ><i class="fa fa-envelope"></i> <a href="mailto:cardiocenterbs@gmail.com" class="upperHeaderLinkage">cardiocenterbs@gmail.com</a></li>
             <li id="workHours"><i class="fa fa-clock-o"></i> Пон-Петък 8:00 - 20:00 </li>
         </ul>
     </div>
@@ -51,6 +51,13 @@
 
 <style lang="scss">
     @import "../style.scss";
+
+    .upperHeaderLinkage {
+        color: $soft_text_white;
+        font-family: cursive;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
 
     ul {
         @include nomargpad();
