@@ -13,7 +13,7 @@
         <span>За вашето здраве</span>
         <h1>КАРДИОЛОГИЧЕН <br> ЦЕНТЪР БУРГАС</h1>
         <div id="phone">
-            <p>0876/999-539</p>
+            <a href="tel:087699539">0876/999-539</a>
         </div>
         <p id="smalltext">За всички мобилни оператори.</p>
     </div>
@@ -24,7 +24,7 @@
         <h1 class="gap_up">КАРДИОЛОГИЧЕН <br> ЦЕНТЪР БУРГАС</h1>
         <p class="gap_up">За вашето здраве</p>
         <div id="phone" class="gap_up little_gap_down">
-            <p>0876/999-539</p>
+            <a href="tel:087699539">0876/999-539</a>
         </div>
     </div>
 </div>
@@ -68,6 +68,7 @@
         #phone {
             margin-top: 70px;
             max-width: 170px;
+            text-align: center;
         }
     }
 
@@ -77,11 +78,13 @@
         width: auto;
         border-radius: 3px;
 
-        p {
+        a {
             margin: 0;
             font-size: 1.4rem;
             color: $light_white;
             font-family: sans-serif;
+            text-align: center;
+            text-decoration: none;
         }
     }
 
