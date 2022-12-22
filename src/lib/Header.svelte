@@ -89,6 +89,11 @@
         box-shadow: 0px 2px 10px grey;
     }
 
+    .lower {
+        width: 90%;
+        min-width: 560px;
+    }
+
     .hiddenForPc {
         display: none;
     }
@@ -121,6 +126,18 @@
                 text-align: center;
                 font-family: sans-serif;
             }
+        }
+    }
+
+    @media only screen and (max-width: 1450px) {
+        .lower {
+            min-width: 0px;
+        }
+    }
+
+    @media only screen and (max-width: 1270px) {
+        .lowerHeader {
+            padding: 0vw 5vw;
         }
     }
 

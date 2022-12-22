@@ -42,7 +42,7 @@
 
     .heading {
         position: absolute;
-        left: 15vw;
+        left: 10vw;
         top: 350px;
 
         span {
@@ -104,17 +104,34 @@
     .containter {
         background-image: url("/wallpaper.png");
         background-repeat: no-repeat;
-        background-position: center;
         height: 700px;
+        background-position: right;
     }
 
-    @media only screen and (max-width: 1575px) {
+    @media only screen and (max-width: 1450px) {
+        .heading {
+            left: 5vw;
+        }
+
         .containter {
-            background-position: left -300px top 0;
+            background-position: right 15% bottom 0px;
         }
     }
 
-    @media only screen and (max-width: 740px) {
+    @media only screen and (max-width: 1270px) {
+        h1 {
+            font-size: 2.3rem;
+        }
+
+        #phone {
+            width: 120px;
+            a {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1150px) {
         .containter {
             background-color: #eaf4fa;
             background-image: none;
