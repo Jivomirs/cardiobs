@@ -25,11 +25,11 @@
         <a href="/"><img id="logo" src="/logo.png" height="100%" alt="Кардиологичен Център Бургас"></a>
         <nav class="lower">
             <a href="/">Начало</a>
-            <a href="/articles/forus.svelte">За Нас</a>
+            <a href="/articles/forus">За Нас</a>
             <a href="/offers">Дейности</a>
             <a href="/about">Екип</a>
             <a href="/appointment">Запишете час</a>
-            <a href="/articles/photos.svelte">Галерия</a>
+            <a href="/articles/photos">Галерия</a>
         </nav>
         <button on:click={toggleNav} class="openLowerer hiddenForPc" aria-label="Меню" aria-expanded={navDisplay}>
             <i class="fa fa-angle-down"></i>
@@ -39,11 +39,11 @@
         <div class="lowererHeader hiddenForPc">
             <nav class="lowerer">
                 <a href="/">Начало</a>
-                <a href="/articles/forus.svelte">За Нас</a>
+                <a href="/articles/forus">За Нас</a>
                 <a href="/offers">Дейности</a>
                 <a href="/about">Екип</a>
                 <a href="/appointment">Запишете час</a>
-                <a href="/articles/photos.svelte">Галерия</a>
+                <a href="/articles/photos">Галерия</a>
             </nav>
         </div>
     {/if}
@@ -63,7 +63,7 @@
         @include nomargpad();
         display: flex;
         justify-content: space-between;
-        padding: 0px 15vw;
+        padding: 0 15vw;
 
         li {
             margin: 10px;
@@ -131,23 +131,23 @@
 
     @media only screen and (max-width: 1450px) {
         .lower {
-            min-width: 0px;
+            min-width: 0;
         }
     }
 
     @media only screen and (max-width: 1270px) {
         .lowerHeader {
-            padding: 0vw 5vw;
+            padding: 0 5vw;
         }
     }
 
     @media only screen and (max-width: 1060px) {
         ul {
-            padding: 0px 10vw;
+            padding: 0 10vw;
         }
         
         .lowerHeader {
-            padding: 0px 10vw;
+            padding: 0 10vw;
             height: 70px;
         }
 
@@ -162,7 +162,7 @@
         }
 
         ul {
-            padding: 0px 10vw;
+            padding: 0 10vw;
         }
     }
 
@@ -173,7 +173,7 @@
         
         .lowerHeader {
             justify-content: center;
-            padding: 0vw;
+            padding: 0;
         }
     }
 
@@ -208,7 +208,7 @@
         }
 
         .openLowerer {
-            padding: 0px 20px;
+            padding: 0 20px;
             height: 100%;
             display: flex;
             justify-content: center;

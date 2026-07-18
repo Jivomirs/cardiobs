@@ -23,7 +23,7 @@
         <div id="additional_info">
             <p><strong>Допълнителна инфромация</strong></p>
             <button type="button" class="link-btn" on:click={showIt}>Настройки за бисквитки</button>
-            <a href="/articles/privacy.svelte">Поверителност на данните</a><br>
+            <a href="/articles/privacy">Поверителност на данните</a><br>
         </div>
         <div id="madeby">
             <p>Copyright &copy;2022 cardio-bs. Made with &hearts; by Zakrok09.</p>
@@ -49,7 +49,7 @@
         color: $soft_text_white;
         display: inline-block;
         margin-top: 10px;
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 
     span {
@@ -96,7 +96,7 @@
 
     @media only screen and (max-width: 1000px) {
         footer {
-            padding: 0px;
+            padding: 0;
         }
     }
 
@@ -149,7 +149,7 @@
         footer {
            grid-template: 200px 200px 200px 50px / 1fr;
            #contact, #additional_info, #links {
-               margin: 30px 0px;
+               margin: 30px 0;
            }
         }
     }

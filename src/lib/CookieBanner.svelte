@@ -7,7 +7,7 @@
 {#if showBanner}
     <div transition:fade id="cookieConsent">
         <span>Този уебсайт използва бисквитки с цел подобряване използаемостта му.</span> <br>
-        <a href="/articles/privacy.svelte">Още информация</a> 
+        <a href="/articles/privacy">Още информация</a> 
         <div class="flex_cont">
             <button on:click class="cookieConsentOK">Настройки</button>
         </div>
