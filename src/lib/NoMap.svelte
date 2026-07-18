@@ -8,7 +8,7 @@
 </script>
 
 <div id="iframe_rep" style="margin-top: {marginalTop};" title="empty" src="" frameborder="0">
-    <span>Изключили сте бисквитките за карта. Може да ги включите обратно <u on:click={openModal}>тук</u></span> 
+    <span>Изключили сте бисквитките за карта. Може да ги включите обратно <button type="button" class="link-btn" on:click={openModal}>тук</button></span>
     <p>Адрес на фирмата: Бургас, ж.к. Зорница, Затворен комплекс "Перла", Бл. 1, вх. 1, партер</p>
     <p>Вместо да включвате картата може да отворите този линк тук:</p> <a target="about:blank" href="https://g.page/CardiologicalCenter?share"><button>Към Карта (извън страницата)</button></a>
 </div>
@@ -36,9 +36,14 @@
             margin: 5px 10px;
         }
 
-        u {
+        .link-btn {
+            background: none;
+            border: none;
+            padding: 0;
+            font: inherit;
             cursor: pointer;
             color: $accent_red;
+            text-decoration: underline;
         }
     }
 

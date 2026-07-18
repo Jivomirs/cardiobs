@@ -22,7 +22,7 @@
         </div>
         <div id="additional_info">
             <p><strong>Допълнителна инфромация</strong></p>
-            <span on:click={showIt}>Настройки за бисквитки</span>
+            <button type="button" class="link-btn" on:click={showIt}>Настройки за бисквитки</button>
             <a href="/articles/privacy.svelte">Поверителност на данните</a><br>
         </div>
         <div id="madeby">
@@ -56,6 +56,18 @@
         display: block;
         margin-top: 10px;
         cursor: pointer;
+    }
+
+    .link-btn {
+        display: block;
+        margin-top: 10px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+        font: inherit;
+        text-align: left;
+        color: $soft_text_white;
     }
 
     #contact {
@@ -136,7 +148,7 @@
     @media only screen and (max-width: 275px) {
         footer {
            grid-template: 200px 200px 200px 50px / 1fr;
-           #contact #additional_info #links {
+           #contact, #additional_info, #links {
                margin: 30px 0px;
            }
         }

@@ -31,9 +31,9 @@
             <a href="/appointment">Запишете час</a>
             <a href="/articles/photos.svelte">Галерия</a>
         </nav>
-        <div on:click={toggleNav} class="openLowerer hiddenForPc">
+        <button on:click={toggleNav} class="openLowerer hiddenForPc" aria-label="Меню" aria-expanded={navDisplay}>
             <i class="fa fa-angle-down"></i>
-        </div>
+        </button>
     </div>
     {#if navDisplay}
         <div class="lowererHeader hiddenForPc">
@@ -215,6 +215,9 @@
             align-items: center;
             background-color: hsl(0, 0%, 90%);
             cursor: pointer;
+            border: none;
+            font-size: inherit;
+            color: inherit;
         }
 
         .lowerer {
