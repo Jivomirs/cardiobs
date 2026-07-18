@@ -1,13 +1,8 @@
 
 <script>
-    import { page } from '$app/stores';
+    import { page } from '$app/state';
     import { afterNavigate } from '$app/navigation';
     let itemsToDisplay = [];
-    //Available item types
-    // text (heading '', paragraphs[], supplementPhoto '')
-    // photos (sources [], heading '', paragraph '')
-    // heading (heading '')
-    // links (links[ {text '', href ''}, ... ])
     afterNavigate(() => {
         switch ($page.params.article) {
             case "photos.svelte":
@@ -131,7 +126,7 @@
 </div>
 
 <style lang="scss">
-    @import "../../style.scss";
+    @use "style" as *;
     .center_controller {
         margin: 100px 15vw;
         min-height: 45vh;
@@ -238,7 +233,6 @@
         }
 
         .photo {
-            max-height: auto;
             max-width: 80vw;
         }
 

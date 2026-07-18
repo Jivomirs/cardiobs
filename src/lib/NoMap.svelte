@@ -15,7 +15,7 @@
 
 
 <style lang="scss">
-    @import "../style.scss";
+    @use "style" as *;
 
     #iframe_rep {
         width: 100vw;

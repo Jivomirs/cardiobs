@@ -31,7 +31,7 @@
 </div>
 
 <style lang="scss">
-    @import "../style.scss";
+    @use "style" as *;
     .services {
         font-family: "Open Sans", sans-serif;
         padding-top: 1px;

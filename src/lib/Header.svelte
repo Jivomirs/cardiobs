@@ -50,11 +50,11 @@
 </header>
 
 <style lang="scss">
-    @import "../style.scss";
+    @use "style" as *;
 
     .upperHeaderLinkage {
         color: $soft_text_white;
-        font-family: cursive;
+        font-family: sans-serif;
         font-weight: 500;
         font-size: 0.9rem;
     }
@@ -69,14 +69,14 @@
             margin: 10px;
             display: inline;
             color: $soft_text_white;
-            font-family: cursive;
+            font-family: sans-serif;
             font-weight: 500;
             font-size: 0.9rem;
         }
 
         i {
             font-size: 0.9rem;
-            font-weight: thin;
+            font-weight: lighter;
         }
     }
 
@@ -84,9 +84,9 @@
         background-color: $light_white;
         height: 100px;
         display: flex;
-        padding: 0px 15vw;
+        padding: 0 15vw;
         justify-content: space-between;
-        box-shadow: 0px 2px 10px grey;
+        box-shadow: 0 2px 10px grey;
     }
 
     .lower {

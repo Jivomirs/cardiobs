@@ -1,7 +1,6 @@
 <script>
-    import PageHeading from "../lib/miniComponents/PageHeading.svelte";
-    import WorkTimes from "../lib/WorkTimes.svelte";
-    import Map from "../lib/Map.svelte";
+    import PageHeading from "../../lib/miniComponents/PageHeading.svelte";
+    import Map from "../../lib/Map.svelte";
 </script>
 
 <div class="margined-center">
@@ -23,12 +22,11 @@
             </div>
         </div>
     </div>
-    <!-- <WorkTimes /> -->
 </div>
 <Map />
 
 <style lang="scss">
-    @import "../style.scss";
+    @use "style" as *;
 
     .margined-center {
         margin: 0 15vw;

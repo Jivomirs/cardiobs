@@ -11,7 +11,7 @@
 </div>
 
 <style lang="scss">
-    @import "../../style.scss";
+    @use "style" as *;
 
     .heading {
         grid-area: 1 / 2 / span 1 / span 5;

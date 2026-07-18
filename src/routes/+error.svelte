@@ -1,20 +1,12 @@
-<script context="module">
-    export function load({ error }) {
-        return {
-            props: { message: error.message }
-        };
-    }
-</script>
-
 <script>
-    export let message;
+    import { page } from '$app/state';
 </script>
 
 <div class="error">
     <h2>Опа</h2>
     <p>Такава страница не същестува</p>
     <a href="/">Към началото</a>
-    <p>{message}</p>
+    <p>{$page.error?.message}</p>
 </div>
 
 <style lang="scss">

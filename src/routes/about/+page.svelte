@@ -1,5 +1,5 @@
 <script>
-    import PageHeading from "../lib/miniComponents/PageHeading.svelte";
+    import PageHeading from "../../lib/miniComponents/PageHeading.svelte";
 </script>
 
 <div class="grid">
@@ -28,7 +28,7 @@
 </div>
 
 <style lang="scss">
-    @import "../style.scss";
+    @use "style" as *;
     
 
     p {

@@ -15,7 +15,7 @@
 {/if}
 
 <style lang="scss">
-    @import "../style.scss";
+    @use "style" as *;
     #cookieConsent {
         background-color: $text_black;
         min-height: 26px;
@@ -59,18 +59,18 @@
         }
     }
     
-    // .cookieConsentNotOK {
-    //     background-color: $soft_text_white;
-    //     color: #000;
-    //     display: inline-block;
-    //     border-radius: 1px;
-    //     padding: 15px 30px;
-    //     border: none;
-    //     cursor: pointer;
+     .cookieConsentNotOK {
+         background-color: $soft_text_white;
+         color: #000;
+         display: inline-block;
+         border-radius: 1px;
+         padding: 15px 30px;
+         border: none;
+         cursor: pointer;
 
-    //     &:hover {
-    //         background-color: $softer_text_white;
-    //     }
-    // }
+         &:hover {
+             background-color: $softer_text_white;
+         }
+     }
 /*Cookie Consent End*/
 </style>

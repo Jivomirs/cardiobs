@@ -31,7 +31,7 @@
     </footer>
 
 <style lang="scss">
-    @import "../style.scss";
+    @use "style" as *;
     
     footer {
         @include nomargpad();

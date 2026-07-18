@@ -15,7 +15,7 @@
     </div>
 
 <style lang="scss">
-    @import "../style.scss";
+    @use "style" as *;
     .article_left {
         display: grid;
         grid-template: 300px / 1fr 3fr 1fr;

@@ -30,7 +30,7 @@
 </div>
 
 <style lang="scss">
-    @import "../style.scss";
+    @use "style" as *;
 
     .heading_alt {
         display: none;

@@ -18,9 +18,9 @@
 <Map />
 
 <style lang="scss">
-    @import "../style.scss";
+    @use "style" as *;
     .centering {
-        margin: 60px 0px 0px 0px;
+        margin: 60px 0 0 0;
     }
     .center {
         margin: 10px 15vw;
