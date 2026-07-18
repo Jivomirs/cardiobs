@@ -22,8 +22,8 @@
         </div>
         <div id="additional_info">
             <p><strong>Допълнителна инфромация</strong></p>
-            <span on:click={showIt}>Настройки за бисквитки</span>
-            <a href="/articles/privacy.svelte">Поверителност на данните</a><br>
+            <button type="button" class="link-btn" on:click={showIt}>Настройки за бисквитки</button>
+            <a href="/articles/privacy">Поверителност на данните</a><br>
         </div>
         <div id="madeby">
             <p>Copyright &copy;2022 cardio-bs. Made with &hearts; by Zakrok09.</p>
@@ -31,7 +31,7 @@
     </footer>
 
 <style lang="scss">
-    @import "../style.scss";
+    @use "style" as *;
     
     footer {
         @include nomargpad();
@@ -49,13 +49,25 @@
         color: $soft_text_white;
         display: inline-block;
         margin-top: 10px;
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 
     span {
         display: block;
         margin-top: 10px;
         cursor: pointer;
+    }
+
+    .link-btn {
+        display: block;
+        margin-top: 10px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+        font: inherit;
+        text-align: left;
+        color: $soft_text_white;
     }
 
     #contact {
@@ -84,7 +96,7 @@
 
     @media only screen and (max-width: 1000px) {
         footer {
-            padding: 0px;
+            padding: 0;
         }
     }
 
@@ -136,8 +148,8 @@
     @media only screen and (max-width: 275px) {
         footer {
            grid-template: 200px 200px 200px 50px / 1fr;
-           #contact #additional_info #links {
-               margin: 30px 0px;
+           #contact, #additional_info, #links {
+               margin: 30px 0;
            }
         }
     }

@@ -25,36 +25,36 @@
         <a href="/"><img id="logo" src="/logo.png" height="100%" alt="Кардиологичен Център Бургас"></a>
         <nav class="lower">
             <a href="/">Начало</a>
-            <a href="/articles/forus.svelte">За Нас</a>
+            <a href="/articles/forus">За Нас</a>
             <a href="/offers">Дейности</a>
             <a href="/about">Екип</a>
             <a href="/appointment">Запишете час</a>
-            <a href="/articles/photos.svelte">Галерия</a>
+            <a href="/articles/photos">Галерия</a>
         </nav>
-        <div on:click={toggleNav} class="openLowerer hiddenForPc">
+        <button on:click={toggleNav} class="openLowerer hiddenForPc" aria-label="Меню" aria-expanded={navDisplay}>
             <i class="fa fa-angle-down"></i>
-        </div>
+        </button>
     </div>
     {#if navDisplay}
         <div class="lowererHeader hiddenForPc">
             <nav class="lowerer">
                 <a href="/">Начало</a>
-                <a href="/articles/forus.svelte">За Нас</a>
+                <a href="/articles/forus">За Нас</a>
                 <a href="/offers">Дейности</a>
                 <a href="/about">Екип</a>
                 <a href="/appointment">Запишете час</a>
-                <a href="/articles/photos.svelte">Галерия</a>
+                <a href="/articles/photos">Галерия</a>
             </nav>
         </div>
     {/if}
 </header>
 
 <style lang="scss">
-    @import "../style.scss";
+    @use "style" as *;
 
     .upperHeaderLinkage {
         color: $soft_text_white;
-        font-family: cursive;
+        font-family: sans-serif;
         font-weight: 500;
         font-size: 0.9rem;
     }
@@ -63,20 +63,20 @@
         @include nomargpad();
         display: flex;
         justify-content: space-between;
-        padding: 0px 15vw;
+        padding: 0 15vw;
 
         li {
             margin: 10px;
             display: inline;
             color: $soft_text_white;
-            font-family: cursive;
+            font-family: sans-serif;
             font-weight: 500;
             font-size: 0.9rem;
         }
 
         i {
             font-size: 0.9rem;
-            font-weight: thin;
+            font-weight: lighter;
         }
     }
 
@@ -84,9 +84,9 @@
         background-color: $light_white;
         height: 100px;
         display: flex;
-        padding: 0px 15vw;
+        padding: 0 15vw;
         justify-content: space-between;
-        box-shadow: 0px 2px 10px grey;
+        box-shadow: 0 2px 10px grey;
     }
 
     .lower {
@@ -131,23 +131,23 @@
 
     @media only screen and (max-width: 1450px) {
         .lower {
-            min-width: 0px;
+            min-width: 0;
         }
     }
 
     @media only screen and (max-width: 1270px) {
         .lowerHeader {
-            padding: 0vw 5vw;
+            padding: 0 5vw;
         }
     }
 
     @media only screen and (max-width: 1060px) {
         ul {
-            padding: 0px 10vw;
+            padding: 0 10vw;
         }
         
         .lowerHeader {
-            padding: 0px 10vw;
+            padding: 0 10vw;
             height: 70px;
         }
 
@@ -162,7 +162,7 @@
         }
 
         ul {
-            padding: 0px 10vw;
+            padding: 0 10vw;
         }
     }
 
@@ -173,7 +173,7 @@
         
         .lowerHeader {
             justify-content: center;
-            padding: 0vw;
+            padding: 0;
         }
     }
 
@@ -208,13 +208,16 @@
         }
 
         .openLowerer {
-            padding: 0px 20px;
+            padding: 0 20px;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: hsl(0, 0%, 90%);
             cursor: pointer;
+            border: none;
+            font-size: inherit;
+            color: inherit;
         }
 
         .lowerer {

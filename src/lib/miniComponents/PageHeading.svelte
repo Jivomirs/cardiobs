@@ -11,7 +11,7 @@
 </div>
 
 <style lang="scss">
-    @import "../../style.scss";
+    @use "style" as *;
 
     .heading {
         grid-area: 1 / 2 / span 1 / span 5;
@@ -58,12 +58,12 @@
     @media only screen and (max-width: 350px) {
         .heading {
             h2 {
-            font-size: 1.7rem;
+                font-size: 1.7rem;
+            }
 
             p {
                 font-size: 0.4rem !important;
             }
-        }
         }
     }
 </style>

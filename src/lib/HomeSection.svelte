@@ -33,7 +33,7 @@
 
 
 <style lang="scss">
-    @import "../style.scss";
+    @use "style" as *;
 
     #button {
         background-color: $soft_button;

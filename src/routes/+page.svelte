@@ -9,7 +9,7 @@
 
 <Group />
 <div class="centering">
-    <HomeSection routeTo={`articles/photos.svelte`} heading="Кардио център Бургас" additionaltext1={additionaltexts[0]} additionaltext2={additionaltexts[1]} imageSource={"/bonusimage1.png"} infobutton={'Още снимки'}/>
+    <HomeSection routeTo={`articles/photos`} heading="Кардио център Бургас" additionaltext1={additionaltexts[0]} additionaltext2={additionaltexts[1]} imageSource={"/bonusimage1.png"} infobutton={'Още снимки'}/>
     <HomeSection routeTo={`articles/covid.svelte`} heading="Мерки против COVID-19" headingSize="2rem" additionaltext1={additionaltexts[2]} additionaltext2={' '} infobutton={''} />
 </div>
 <div class="center">
@@ -18,9 +18,9 @@
 <Map />
 
 <style lang="scss">
-    @import "../style.scss";
+    @use "style" as *;
     .centering {
-        margin: 60px 0px 0px 0px;
+        margin: 60px 0 0 0;
     }
     .center {
         margin: 10px 15vw;

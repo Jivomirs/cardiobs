@@ -1,7 +1,7 @@
 <script>
-    import Services from "../lib/Services.svelte";
-    import Map from "../lib/Map.svelte";
-    import WorkTimes from "../lib/WorkTimes.svelte";
+    import Services from "../../lib/Services.svelte";
+    import Map from "../../lib/Map.svelte";
+    import WorkTimes from "../../lib/WorkTimes.svelte";
 </script>
 
 <div class="margined-center">
@@ -34,7 +34,7 @@
 <Map />
 
 <style lang="scss">
-    @import "../style.scss";
+    @use "style" as *;
 
     .text {
         font-family: "Open Sans", sans-serif;
@@ -48,7 +48,6 @@
         h3 {
             font-size: 1.2rem;
             color: $darker_blue;
-            // color: hsl(0, 0, 23%);
         }
 
         p {

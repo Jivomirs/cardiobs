@@ -34,7 +34,7 @@
 </div>
 
 <style lang="scss">
-    @import "../style.scss";
+    @use "style" as *;
 
     .golden {
         color: $accent_red;

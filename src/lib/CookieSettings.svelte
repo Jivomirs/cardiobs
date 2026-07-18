@@ -20,7 +20,7 @@
             <h2>За какво се използват бисквитките?</h2>
             <p><strong>Ваше неприкосновено право</strong> е възможността да се откажете от каквито и да е бисквитки, които не са необходими за функционалността на сайта.</p>
             <p>За да промените избора си по-късно, цъкнете върху "Настройки за бисквитки" най-долу на страницата.</p>
-            <a href="/articles/privacy.svelte" target="_blank">Повече информация</a> <br><br>
+            <a href="/articles/privacy" target="_blank">Повече информация</a> <br><br>
             <form on:submit|preventDefault={handleSubmit}>
                 <label class="switch" for="googleConsent">
                     <input id="googleConsent" type="checkbox" bind:checked={nonTrackConsent}>
@@ -35,7 +35,7 @@
 
 
 <style lang="scss">
-    @import "../style.scss";
+    @use "style" as *;
 
     .switch {
         position: relative;
@@ -97,20 +97,6 @@
         border-radius: 50%;
     }
 
-    // #denied {
-    //     background-color: $soft_text_white;
-    //     color: $bg_black;
-    //     padding: 5px;
-    //     border: none;
-    //     margin-top: 20px;
-    //     font-size: 0.9rem;
-    //     display: inline-block;
-    //     cursor: pointer;
-
-    //     &:hover {
-    //         background-color: $softer_text_white;
-    //     }
-    // }
     .backdrop {
         width: 100%;
         height: 100%;
@@ -131,7 +117,6 @@
 
     .modal {
         font-family: "Open Sans", sans-serif;
-        padding: 10px;
         border-radius: 10px;
         width: auto;
         max-width: 600px;
